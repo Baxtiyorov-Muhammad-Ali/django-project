@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-5">
+     <div class="p-4 mb-5 rounded-3 shadow text-white" style="background: linear-gradient(135deg, #0d6efd, #6610f2);">
+        <div class="container-fluid py-4 text-center">
+            <h2 class="fw-bold">Welcome to Kindergarten Meal Tracking & Inventory Management System</h2>
+            <p class="fs-5 mt-2">Tizim orqali ovqatlanish menyularini boshqarish, mahsulot zaxiralarini nazorat qilish va hisobotlarni tezkor olish imkoniyati mavjud</p>
+            <a href="{% url 'all-items' %}" class="btn btn-outline-light btn-lg mt-3">Browse Items</a>
+        </div>
+    </div>
+    <div class="row g-4 text-center">
+        <!-- Add Items -->
+        <div class="col-md-3">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">➕ Mahsulotlarni qo`shish</h5>
+                    <p class="card-text">Yangi Mahsulotlarni tezda ro`yxatdan o`tkazish</p>
+                    <a href="{% url 'add-item' %}" class="btn btn-primary btn-sm">Add</a>
+                </div>
+            </div>
+        </div>
+            <div class="col-md-3">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">📤 Mahsulotlarni chiqarish</h5>
+                    <p class="card-text">Xodimlar yoki foydalanuvchilarga berilgan narsalarni kuzatib borish</p>
+                    <a href="{% url 'issue-item' %}" class="btn btn-warning btn-sm">Issue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">📥 Mahsulotlarlarni qaytarish</h5>
+                    <p class="card-text">Qaytarilgan mahsulotlarni to'g'ri ro'yxatga olish bilan boshqarish</p>
+                    <a href="{% url 'return-item' %}" class="btn btn-success btn-sm">Return</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">♻️ Mahsulotlarni qayta zaxiralash </h5>
+                    <p class="card-text">Mavjud mahsulotlar uchun zaxiralar miqdorini yangilash.</p>
+                    <a href="{% url 'restock-item' %}" class="btn btn-info btn-sm text-white">Restock</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
