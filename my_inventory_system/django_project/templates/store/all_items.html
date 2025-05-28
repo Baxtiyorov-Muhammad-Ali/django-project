@@ -4,16 +4,16 @@
 
 <div class="card">
     <div class="card-body">
-        <h4>All Items</h4>
+        <h4>Hamma mahsulotlar</h4>
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th scope="col">Item name</th>
-                    <th scope="col">Amount Remaining</th>
-                    <th scope="col">Created By</th>
-                    <th scope="col">Date Created</th>
-                    <th scope="col">Initial Amount</th>
-                    <th scope="col">Action</th>
+                    <th scope="col">Mahsulot nomi</th>
+                    <th scope="col">Qolgan soni</th>
+                    <th scope="col">Yaratilgan tomonidan</th>
+                    <th scope="col">Yaratilgan sanasi</th>
+                    <th scope="col">Boshlang`ich soni</th>
+                    <th scope="col">Yangilash</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,7 +24,7 @@
                     <td>{{item.created_by}}</td>
                     <td>{{item.created_date}}</td>
                     <td>{{item.initial_amount}}</td>
-                    <td><a href="{% url 'update-item' item.pk %}">Update</a></td>
+                    <td><a href="{% url 'update-item' item.pk %}">Yanglish</a></td>
                 </tr>
                 {% endfor %}
             </tbody>

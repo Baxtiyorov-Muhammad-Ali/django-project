@@ -2,17 +2,17 @@
 {% load widget_tweaks %}
 
 {% block content %}
-<h5>Restock an Item</h5>
+<h5>Mahsulotlarni to`ldirish</h5>
 <form class="p-4 p-md-5 border rounded-3 bg-light" method="POST">
     {% csrf_token %}
     <div class="form-floating mb-3">
         {% render_field form.item class="form-control" %}
-        <label for="floatingInput">Item Name</label>
+        <label for="floatingInput">Mahsulot nomi</label>
     </div>
     <div class="form-floating mb-3">
         {% render_field form.amount class="form-control" %}
-        <label for="floatingInput">Amount</label>
+        <label for="floatingInput">Soni</label>
     </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Yuborish</button>
 </form>
 {% endblock content %}
