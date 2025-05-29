@@ -1,32 +1,20 @@
-name: Deploy to EC2
+name: Deploy to PythonAnywhere
 
 on:
   push:
     branches:
-      - main
+      - main  # faqat 'main' branchga push qilinganida ishga tushadi
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v2  # Kodingizni tekshirib chiqish
 
-    - name: Set up SSH
-      uses: webfactory/ssh-agent@v0.8.0
-      with:
-        ssh-private-key: ${{ secrets.EC2_KEY }}
-
-    - name: Deploy to EC2
+    - name: Reload PythonAnywhere app
       run: |
-        ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
-          cd ~/erp
-          git pull origin main
-          source venv/bin/activate
-          pip install -r requirements.txt
-          python manage.py migrate
-          python manage.py collectstatic --noinput
-          sudo systemctl restart gunicorn
-          sudo systemctl restart nginx
-        EOF
+        curl -X POST \
+        -H "Authorization: Token ${{ secrets.PA_API_TOKEN }}" \
+        https://www.pythonanywhere.com/api/v0/user/${{ secrets.PA_USERNAME }}/webapps/${{ secrets.PA_USERNAME }}.pythonanywhere.com/reload/
