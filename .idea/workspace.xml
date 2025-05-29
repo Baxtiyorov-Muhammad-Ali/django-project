@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a81c4174-cc4d-47c2-97e3-bdbb279c82a3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/my_inventory_system/django_project/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_inventory_system/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/my_inventory_system/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_inventory_system/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/my_inventory_system/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_inventory_system/django_project/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_inventory_system/django_project/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,28 +47,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.Django_Inventory_Management_System.django: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.Django_Inventory_Management_System.redis: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.Django_Inventory_Management_System: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.my_inventory_system/Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.base.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.Django_Inventory_Management_System.django: Compose Deployment.executor": "Run",
+    "Docker.Django_Inventory_Management_System.redis: Compose Deployment.executor": "Run",
+    "Docker.Django_Inventory_Management_System: Compose Deployment.executor": "Run",
+    "Docker.my_inventory_system/Dockerfile.executor": "Run",
+    "JavaScript Debug.base.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="JavaScript Debug.base.html">
     <configuration name="base.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Finallllll/my_inventory_system/django_project/templates/base.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -187,7 +186,8 @@
       <workItem from="1748261958107" duration="39000" />
       <workItem from="1748300547509" duration="1447000" />
       <workItem from="1748319513086" duration="12363000" />
-      <workItem from="1748472484327" duration="1211000" />
+      <workItem from="1748472484327" duration="12418000" />
+      <workItem from="1748530994136" duration="1261000" />
     </task>
     <servers />
   </component>
