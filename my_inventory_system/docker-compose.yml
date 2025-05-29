@@ -1,14 +1,14 @@
 version: '3'
 services:
-  redis:
-    image: redis
-    container_name: redis
-    ports:
-      - "6379:6379"
-  django:
+  web:
     build: .
-    container_name: django_app
     ports:
       - "8000:8000"
-    depends_on:
-      - redis
+    volumes:
+      - .:/app
+    environment:
+      - DEBUG=True
+    command: python django_project/manage.py runserver 0.0.0.0:8000
+
+
+
