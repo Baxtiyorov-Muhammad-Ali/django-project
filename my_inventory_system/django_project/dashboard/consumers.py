@@ -7,7 +7,6 @@ class ProductConsumer(AsyncWebsocketConsumer):
     async def connect(self):
         self.room_group_name = 'product_group'
 
-        # Ulanishni qabul qilish
         await self.channel_layer.group_add(
             self.room_group_name,
             self.channel_name
@@ -36,10 +35,7 @@ class ProductConsumer(AsyncWebsocketConsumer):
         )
 
     async def chat_message(self, event):
-        # Boshqalariga xabar yuborish
         message = event['message']
-
-        # WebSocket orqali xabarni yuborish
         await self.send(text_data=json.dumps({
             'message': message
         }))
