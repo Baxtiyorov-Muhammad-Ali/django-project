@@ -4,7 +4,7 @@
       --primary-fg: #f7f7f7;
   
       --body-fg: #eeeeee;
-      --body-bg: #121212;
+      --body-bg: #f40606;
       --body-quiet-color: #d0d0d0;
       --body-medium-color: #e0e0e0;
       --body-loud-color: #ffffff;
@@ -41,7 +41,7 @@ html[data-theme="dark"] {
     --primary-fg: #f7f7f7;
 
     --body-fg: #eeeeee;
-    --body-bg: #121212;
+    --body-bg: #f60606;
     --body-quiet-color: #d0d0d0;
     --body-medium-color: #e0e0e0;
     --body-loud-color: #ffffff;
